@@ -1,42 +1,61 @@
 name: Linters
 
-on: pull_request
+on:
+  pull_request:
+    branches: [ main, master ]
+  push:
+    branches: [ main, master ]
 
 env:
   FORCE_COLOR: 1
+  NODE_VERSION: "20.x"
 
 jobs:
   eslint:
     name: ESLint
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
       - name: Install dependencies
-        run: npm install
-      - name: ESLint Report
-        run: npx eslint . --ext .js,.jsx --config eslint.config.js
+        run: npm ci
+
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.jsx --config eslint.config.js --max-warnings=0
 
   stylelint:
     name: Stylelint
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
       - name: Install dependencies
-        run: npm install
-      - name: Stylelint Report
-        run: npx stylelint "**/*.{css,scss}"
+        run: npm ci
+
+      - name: Run Stylelint
+        run: npx stylelint "**/*.{css,scss}" --max-warnings=0
 
   nodechecker:
     name: node_modules checker
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Check node_modules existence
         run: |
           if [ -d "node_modules/" ]; then

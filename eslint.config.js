@@ -1,33 +1,42 @@
 import js from "@eslint/js";
 import globals from "globals";
-import pluginReact from "eslint-plugin-react";
-import pluginReactHooks from "eslint-plugin-react-hooks";
-import pluginImport from "eslint-plugin-import";
-import { defineConfig } from "eslint/config";
+import reactPlugin from "eslint-plugin-react";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
+import importPlugin from "eslint-plugin-import";
 
-export default defineConfig([
+/** @type {import('eslint').Linter.Config[]} */
+export default [
   {
-    // Ignore stylelint config and other non-JS files
+    // Ignore files
     ignores: [
       "**/.stylelintrc.json",
       "**/stylelint.config.js",
       "**/*.css",
       "**/*.scss",
+      "node_modules/",
+      "dist/",
+      "build/",
     ],
+  },
+  {
     files: ["**/*.{js,mjs,cjs,jsx}"],
-    plugins: {
-      react: pluginReact,
-      "react-hooks": pluginReactHooks,
-      import: pluginImport,
-    },
-    extends: [
-      js.configs.recommended,
-      pluginReact.configs.flat.recommended,
-      pluginReactHooks.configs.recommended,
-      pluginImport.configs.recommended,
-    ],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    plugins: {
+      react: reactPlugin,
+      "react-hooks": reactHooksPlugin,
+      import: importPlugin,
     },
     rules: {
       /* --- Basic rules --- */
@@ -40,6 +49,8 @@ export default defineConfig([
       "comma-dangle": ["error", "never"],
 
       /* --- React-specific --- */
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
       "react/jsx-filename-extension": ["warn", { extensions: [".js", ".jsx"] }],
       "react/react-in-jsx-scope": "off",
 
@@ -56,13 +67,19 @@ export default defineConfig([
         "error",
         {
           devDependencies: [
-            "**/eslint.config.js", 
+            "**/eslint.config.js",
             "**/*.test.js",
             "**/*.spec.js",
+            "**/vite.config.js",
+            "**/webpack.config.js",
           ],
           optionalDependencies: false,
         },
       ],
     },
   },
-]);
+  // js.configs.recommended,
+  // reactPlugin.configs.flat.recommended,
+  // reactHooksPlugin.configs.flat.recommended,
+  // importPlugin.flatConfigs?.recommended || importPlugin.configs.recommended,
+];
