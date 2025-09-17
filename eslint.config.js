@@ -1,29 +1,80 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import globals from 'globals';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import importPlugin from 'eslint-plugin-import';
 
-export default defineConfig([
-  globalIgnores(['dist']),
+/** @type {import('eslint').Linter.Config[]} */
+export default [
   {
-    files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
-    ],
+    // Ignore files
+    ignores: [
+      '**/.stylelintrc.json',
+      '**/stylelint.config.js',
+      '**/*.css',
+      '**/*.scss',
+      'node_modules/',
+      'dist/',
+      'build/'
+    ]
+  },
+  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
     languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node
+      },
       parserOptions: {
         ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
         sourceType: 'module',
-      },
+        ecmaFeatures: {
+          jsx: true
+        }
+      }
+    },
+    plugins: {
+      react: reactPlugin,
+      'react-hooks': reactHooksPlugin,
+      import: importPlugin
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-    },
-  },
-])
+      /* --- Basic rules --- */
+      'no-console': 'warn',
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      eqeqeq: ['error', 'always'],
+      curly: ['error', 'all'],
+      semi: ['error', 'always'],
+      quotes: ['error', 'single', { avoidEscape: true }],
+      'comma-dangle': ['error', 'never'],
+
+      /* --- React-specific --- */
+      'react/jsx-uses-react': 'error',
+      'react/jsx-uses-vars': 'error',
+      'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
+      'react/react-in-jsx-scope': 'off',
+
+      /* --- Import rules --- */
+      'import/extensions': [
+        'error',
+        'ignorePackages',
+        {
+          js: 'always',
+          jsx: 'always'
+        }
+      ],
+      'import/no-extraneous-dependencies': [
+        'error',
+        {
+          devDependencies: [
+            '**/eslint.config.js',
+            '**/*.test.js',
+            '**/*.spec.js',
+            '**/vite.config.js',
+            '**/webpack.config.js'
+          ],
+          optionalDependencies: false
+        }
+      ]
+    }
+  }
+];
