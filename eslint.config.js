@@ -11,7 +11,7 @@ export default defineConfig([
     plugins: {
       js,
       react: pluginReact,
-      "react-hooks": pluginReactHooks,
+      "react-hooks": { pluginReactHooks },
       import: pluginImport,
     },
     extends: [
