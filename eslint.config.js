@@ -1,4 +1,3 @@
-import js from '@eslint/js';
 import globals from 'globals';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -78,8 +77,4 @@ export default [
       ]
     }
   }
-  // js.configs.recommended,
-  // reactPlugin.configs.flat.recommended,
-  // reactHooksPlugin.configs.flat.recommended,
-  // importPlugin.flatConfigs?.recommended || importPlugin.configs.recommended,
 ];
