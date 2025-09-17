@@ -1,7 +1,10 @@
-import React from 'react';
-
+import Hero from './components/Hero-Section/Hero.jsx';
 function App() {
-  return <div>Hello</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
 export default App;
