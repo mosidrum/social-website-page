@@ -30,7 +30,7 @@ export default defineConfig([
       eqeqeq: ["error", "always"],
       curly: ["error", "all"],
       semi: ["error", "always"],
-      quotes: ["error", "double", { avoidEscape: true }],
+      quotes: ["error", "double", { avoidEscape: true }], // ✅ enforce double quotes
       "comma-dangle": ["error", "never"],
 
       /* --- React-specific --- */
@@ -50,7 +50,7 @@ export default defineConfig([
         "error",
         {
           devDependencies: [
-            "**/eslint.config.js",
+            "**/eslint.config.js", // ✅ allow eslint config itself
             "**/*.test.js",
             "**/*.spec.js",
           ],
