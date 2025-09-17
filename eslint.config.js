@@ -7,15 +7,21 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   {
+    // Ignore stylelint config and other non-JS files
+    ignores: [
+      "**/.stylelintrc.json",
+      "**/stylelint.config.js",
+      "**/*.css",
+      "**/*.scss",
+    ],
     files: ["**/*.{js,mjs,cjs,jsx}"],
     plugins: {
-      js,
       react: pluginReact,
-      "react-hooks": { pluginReactHooks },
+      "react-hooks": pluginReactHooks,
       import: pluginImport,
     },
     extends: [
-      "js/recommended",
+      js.configs.recommended,
       pluginReact.configs.flat.recommended,
       pluginReactHooks.configs.recommended,
       pluginImport.configs.recommended,
@@ -50,7 +56,7 @@ export default defineConfig([
         "error",
         {
           devDependencies: [
-            "**/eslint.config.js", // ✅ allow eslint config itself
+            "**/eslint.config.js", 
             "**/*.test.js",
             "**/*.spec.js",
           ],
