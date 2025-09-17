@@ -30,7 +30,7 @@ export default defineConfig([
       eqeqeq: ["error", "always"],
       curly: ["error", "all"],
       semi: ["error", "always"],
-      quotes: ["error", "double", { avoidEscape: true }], // ✅ enforce double quotes
+      quotes: ["error", "single", { avoidEscape: true }],
       "comma-dangle": ["error", "never"],
 
       /* --- React-specific --- */
@@ -54,6 +54,7 @@ export default defineConfig([
             "**/*.test.js",
             "**/*.spec.js",
           ],
+          optionalDependencies: false,
         },
       ],
     },
