@@ -4,6 +4,13 @@ import Avatar from './Avatar.jsx';
 import ContentBox from './ContentBox.jsx';
 import SocialCard from './SocialCard.jsx';
 
+const socialsData = [
+  { value: '2M+', text: 'Content Views' },
+  { value: '50k+', text: 'Students Taught' },
+  { value: '100+', text: 'Brands Collaborated' },
+  { value: '4.7', text: 'Average Rating', icon: 'fa-solid fa-star' }
+];
+
 function Hero() {
   return (
     <div className="container">
@@ -16,10 +23,9 @@ function Hero() {
           platforms for design tips, tutorials, and behind-the-scenes content."
       />
       <div className="socials-box">
-        <SocialCard value="2M+" text="Content Views" />
-        <SocialCard value="50k+" text="Students Taught" />
-        <SocialCard value="100+" text="Brands Collaborated" />
-        <SocialCard value="4.7" text="Average Rating" icon="fa-solid fa-star" />
+        {socialsData.map((card) => (
+          <SocialCard value={card.value} text={card.text} icon={card.icon} />
+        ))}
       </div>
     </div>
   );
