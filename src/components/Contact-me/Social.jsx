@@ -1,5 +1,5 @@
-import React from "react";
-import "./Social.css";
+import React from 'react';
+import './Social.css';
 
 const Social = (props) => {
   return (
