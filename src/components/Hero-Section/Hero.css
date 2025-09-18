@@ -77,7 +77,7 @@
   border-radius: 15px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 24px #00000033;
+  box-shadow: 0 8px 24px #0003;
   color: white;
   padding: 8px 0;
 }
