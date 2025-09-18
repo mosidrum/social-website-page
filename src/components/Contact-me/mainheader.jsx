@@ -1,7 +1,7 @@
-import React from 'react';
-import './Header.css';
+import React from "react";
+import "./mainheader.css";
 
-const Header = () => {
+const Mainheader = () => {
   return (
     <div className="header-contaner">
       <h1>Connect With Me</h1>
@@ -14,4 +14,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Mainheader;
