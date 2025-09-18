@@ -1,4 +1,4 @@
-import FeaturedContent from "./components/FeaturedContent";
+import FeaturedContent from "./components/FeaturedContent.jsx";
 
 function App() {
   return <FeaturedContent />;
