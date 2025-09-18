@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+
+.App {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -12,13 +13,16 @@
   padding: 40px;
   background-color: white;
 }
-.profile{
+
+.profile {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.note{
+
+.note {
   margin-left: 100px;
 }
+
