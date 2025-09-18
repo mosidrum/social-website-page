@@ -1,7 +1,12 @@
 import React from 'react';
+import Footer from './Footer';
 
 function App() {
-  return <div>Hello</div>;
+  return (
+    <>
+    <Footer className="Bottom"></Footer>
+    </>
+  )
 }
 
 export default App;
