@@ -1,0 +1,14 @@
+.header-contaner {
+  text-align: center;
+}
+
+.header-contaner P {
+  color: #777;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.header-contaner h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}

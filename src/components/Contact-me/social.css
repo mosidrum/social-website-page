@@ -1,0 +1,71 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+.social-container {
+    padding: 20px;
+  }
+  
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    margin-top: 15px;
+  }
+  
+  .social-card {
+    font-size: 50px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .social-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .social-card strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .social-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .social-card span {
+    font-size: 10px;
+    color: gray;
+  }
+
+  .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+.fa-up-right-from-square{
+  font-size: 20px;
+  align-self: center;
+  color: #777;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
