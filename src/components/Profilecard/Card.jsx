@@ -1,20 +1,11 @@
-import React from "react";
 
-
-import ProfileCard, { heading } from "./ProfileCard";
-
-
-import bro4 from "../images/bro4.jpg"
-import bro1 from "../images/bro1.jpg"
-import bro2 from "../images/bro2.jpg"
+import ProfileCard, { heading } from './ProfileCard.jsx';
+import bro4 from '../images/bro4.jpg';
+import bro1 from '../images/bro1.jpg';
+import bro2 from '../images/bro2.jpg';
 
 const Card = () => {
-
-
-
-    
-        return(
-            
+     return(  
              <div>
                      {heading} 
             <div className="profile">
@@ -25,7 +16,6 @@ const Card = () => {
                 job="Marketing designers"
                 Title="tech marketer"
                 />
-
                 <ProfileCard
                 image={bro1}
                 name="Michael"
@@ -33,7 +23,6 @@ const Card = () => {
                 job="Graphics designers" 
                 Title="tech graphics"
                 />
-
                 <ProfileCard
                 image={bro2}
                 name="Enoch"
@@ -42,23 +31,7 @@ const Card = () => {
                 Title="tech fashion"
                 />
             </div>
-            
             </div>
         )
-   
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default Card

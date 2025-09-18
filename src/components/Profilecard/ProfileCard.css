@@ -2,7 +2,6 @@ body {
   text-align: center;
   background-color: antiquewhite;
 }
-
 .profile-box {
   width: 320px;
   overflow: hidden;
@@ -12,27 +11,21 @@ body {
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-bottom: 40px;
-  
 }
-
 .profile-box img {
   height: 125px;
   border-radius: 350px;
-  object-fit: cover;
-  
+  object-fit: cover; 
 }
-
 p{
     font-size:large;
     font-weight:normal;
     margin-top: 6px;
 }
-
 .profile-description {
   margin-top: 20px;
   font-family:cursive;
 }
-
 .profile-container {
  padding: 20px;
  display: flex;
@@ -42,8 +35,6 @@ p{
  margin-top: 60px;
  
 }
-
-
 .name {
   font-size: 20px;
   color: black;
@@ -56,7 +47,6 @@ p{
   font-size: 20px;
   color: rgb(48, 41, 41);
 }
-
 .profile-Title {
   margin: 3px;
   color: rgb(75, 71, 71);
