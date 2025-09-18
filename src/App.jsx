@@ -1,7 +1,7 @@
-import React from 'react';
+import FeaturedContent from "./components/FeaturedContent";
 
 function App() {
-  return <div>Hello</div>;
+  return <FeaturedContent />;
 }
 
 export default App;
