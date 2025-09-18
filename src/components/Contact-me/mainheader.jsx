@@ -1,5 +1,5 @@
-import React from "react";
-import "./mainheader.css";
+import React from 'react';
+import './mainheader.css';
 
 const Mainheader = () => {
   return (
