@@ -15,7 +15,7 @@ const Card = () => {
                 description="'Vincent's design tutorials transformed our team's approach to visual content. His clear explanation and pratical tips are invaluable.'"
                 job="Marketing designers"
                 Title="tech marketer"
-                />
+                />;
                 <ProfileCard
                 image={bro1}
                 name="Michael"
@@ -32,6 +32,6 @@ const Card = () => {
                 />
             </div>
             </div>
-        )
-}
-export default Card
+        );
+};
+export default Card;
