@@ -1,7 +1,6 @@
 import React from 'react';
 import './contact.css';
-
-import mainheader from './mainheader.jsx';
+import Mainheader from './mainheader.jsx';
 import Social from './Social.jsx';
 
 const Contact = () => {
@@ -73,7 +72,7 @@ const Contact = () => {
 
   return (
     <div className="main-container">
-      <mainheader />
+      <Mainheader />
       <Social data={SocialMedia} />
     </div>
   );
