@@ -1,12 +1,12 @@
-import React from 'react';
-import Footer from './Footer.jsx';
-
+import Hero from './components/Hero-Section/Hero.jsx'
+import Footer from './components/Footer/Footer.jsx'
 function App() {
   return (
-    <>
-      <Footer className='Bottom'></Footer>
-    </>
-  );
+    <div>
+      <Hero />
+      <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App
