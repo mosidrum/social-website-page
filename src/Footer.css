@@ -42,6 +42,11 @@ footer .footer-social a {
   transition: background-color 0.2s ease;
 }
 
+footer .footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
 footer .footer-social a:hover {
   background-color: #374151;
 }
@@ -55,10 +60,6 @@ footer .footer-links {
   font-size: 12px;
 }
 
-footer .footer-links a {
-  color: #9ca3af;
-  text-decoration: none;
-}
 
 footer .footer-links a:hover {
   color: #fff;
