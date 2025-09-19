@@ -4,7 +4,7 @@ function Avatar({ photo, text }) {
       <img src={photo} alt={photo} />
       <span>{text}</span>
     </div>
-  );
+  )
 }
 
-export default Avatar;
+export default Avatar
