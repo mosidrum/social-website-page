@@ -1,7 +1,11 @@
-import FeaturedContent from './components/FeaturedContent.jsx';
+import FC from './components/FeaturedContent1.jsx';
 
 function App() {
-  return <FeaturedContent />;
+  return (
+    <>
+      <FC></FC>;
+    </>
+  );
 }
 
 export default App;

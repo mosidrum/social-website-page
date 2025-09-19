@@ -5,9 +5,11 @@
 
 .FCheading {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
-
+.main-container {
+  width: 100%;
+}
 .cardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -45,6 +47,7 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
 .media {
   display: inline-block;
   background: rgb(196, 225, 242);
@@ -54,13 +57,14 @@
   padding: 4px 10px;
   font-weight: 500;
   margin-bottom: 10px;
-  margin-right: 150px;
 }
-.socialMedia {
+
+.social {
   margin-top: auto;
-  margin-right: 15px;
   font-size: 14px;
   color: #666;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content {
@@ -77,11 +81,5 @@
   }
   .card {
     width: 100%;
-  }
-  .imgContainer {
-    height: 200px;
-  }
-  .media {
-    margin-right: 100px;
   }
 }
