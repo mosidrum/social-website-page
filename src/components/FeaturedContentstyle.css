@@ -7,9 +7,11 @@
   margin-bottom: 15px;
   font-size: 20px;
 }
+
 .main-container {
   width: 100%;
 }
+
 .cardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -75,10 +77,12 @@
 }
 
 @media (max-width: 768px) {
+  
   .cardsContainer {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
   .card {
     width: 100%;
   }
