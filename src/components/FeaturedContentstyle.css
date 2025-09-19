@@ -77,11 +77,11 @@
 }
 
 @media (max-width: 768px) {
-  .cardsContainer { 
+.cardsContainer { 
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  .card {
+.card {
     width: 100%;
   }
 }
