@@ -6,7 +6,7 @@ import './card.css'
 
 const Card = () => {
   return (
-    < div className='profile-heading'>
+    <div className="profile-heading">
       {heading}
       <div className="profile">
         <ProfileCard

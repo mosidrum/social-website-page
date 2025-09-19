@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <Hero />
-      <Card/>
+      <Card />
     </div>
   )
 }
