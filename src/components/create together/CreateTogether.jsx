@@ -5,7 +5,7 @@ import Button from './button.jsx'
 
 function CreateTogether() {
   return (
-    <div className="container">
+    <div className="containerA">
       <Header />
       <Paragraph />
       <Button text="send email" classname="btn-one" />
