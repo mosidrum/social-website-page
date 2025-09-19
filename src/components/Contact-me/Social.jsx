@@ -1,5 +1,5 @@
 import React from 'react';
-import './Social.css';
+import './Style.css';
 
 const Social = (props) => {
   return (
