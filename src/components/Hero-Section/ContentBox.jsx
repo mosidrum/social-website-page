@@ -5,7 +5,7 @@ function ContentBox({ title, profession, about }) {
       <p className="profession">{profession}</p>
       <p className="about">{about}</p>
     </div>
-  );
+  )
 }
 
-export default ContentBox;
+export default ContentBox
