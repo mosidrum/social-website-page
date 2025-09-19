@@ -1,14 +1,13 @@
+import './App.css'
 
-import './App.css';
-
-import Card from './components/Profilecard/Card.jsx';
+import Card from './components/Profilecard/Card.jsx'
 import Hero from './components/Hero-Section/Hero.jsx'
 
 function App() {
   return (
     <div>
       <Hero />
-      <Card/>
+      <Card />
     </div>
   )
 }

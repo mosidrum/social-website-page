@@ -1,12 +1,11 @@
-
-import './ProfileCard.css';
+import './ProfileCard.css'
 
 const heading = (
   <h1 className="profile-heading">
     What people say
     <p>Feedback from followers, students, and collaborators</p>
   </h1>
-);
+)
 
 const ProfileCard = (props) => {
   return (
@@ -19,8 +18,8 @@ const ProfileCard = (props) => {
         <div className="profile-Title">{props.Title}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export { heading };
-export default ProfileCard;
+export { heading }
+export default ProfileCard
