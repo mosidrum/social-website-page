@@ -6,7 +6,7 @@ import {
   faLinkedin,
   faYoutube,
   faTiktok,
-  faDribbble,
+  faDribbble
 } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
