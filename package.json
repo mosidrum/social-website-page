@@ -35,11 +35,8 @@
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
     "eslint": "^9.35.0",
-<<<<<<< HEAD
-=======
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
->>>>>>> 7e2b86b6b0d3474a04cf61826bb58fd1b4f3ea96
     "prettier": "^3.6.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.5",

@@ -1,5 +1,5 @@
 import Hero from './components/Hero-Section/Hero.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import Footer from "./Footer.jsx";
 function App() {
   return (
     <div>
