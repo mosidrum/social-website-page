@@ -3,7 +3,7 @@ function App() {
   return (
     <div>
       <Hero />
-       <Contact />
+      <Contact />
     </div>
   )
 }

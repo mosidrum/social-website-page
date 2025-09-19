@@ -1,5 +1,5 @@
-import React from 'react';
-import './mainheader.css';
+import React from 'react'
+import './mainheader.css'
 
 const Mainheader = () => {
   return (
@@ -11,7 +11,7 @@ const Mainheader = () => {
         creative inspiration. Each platform offers something special!
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default Mainheader;
+export default Mainheader

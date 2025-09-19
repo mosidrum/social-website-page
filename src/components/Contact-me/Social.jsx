@@ -1,5 +1,5 @@
-import React from 'react';
-import './Style.css';
+import React from 'react'
+import './Style.css'
 
 const Social = (props) => {
   return (
@@ -30,7 +30,7 @@ const Social = (props) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Social;
+export default Social

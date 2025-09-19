@@ -1,7 +1,7 @@
-import React from 'react';
-import './contact.css';
-import Mainheader from './mainheader.jsx';
-import Social from './Social.jsx';
+import React from 'react'
+import './contact.css'
+import Mainheader from './mainheader.jsx'
+import Social from './Social.jsx'
 
 const Contact = () => {
   const SocialMedia = [
@@ -68,14 +68,14 @@ const Contact = () => {
       followers: '500K followers',
       color: '#E60023'
     }
-  ];
+  ]
 
   return (
     <div className="main-container">
       <Mainheader />
       <Social data={SocialMedia} />
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
