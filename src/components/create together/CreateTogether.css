@@ -1,9 +1,9 @@
 .container {
   background-color: #2f5eeb;
   height: 200px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  color: #eeeeee;
+  color: #eee;
   padding: 20px;
 }
 
