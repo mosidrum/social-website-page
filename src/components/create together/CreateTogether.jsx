@@ -1,6 +1,6 @@
 import './CreateTogether.css'
-import Header from './header'
-import Paragraph from './paragraph'
+import Header from './header.jsx'
+import Paragraph from './paragraph.jsx'
 import Button from './button.jsx'
 
 function CreateTogether() {
