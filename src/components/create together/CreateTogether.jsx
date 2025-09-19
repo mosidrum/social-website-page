@@ -8,8 +8,8 @@ function CreateTogether () {
         <div className="container">
         <Header/>
         <Paragraph/>
-        <Button text="send email"/>
-        <Button text="book a call"/>
+        <Button text="send email" classname="btn-one"/>
+        <Button text="book a call" classname = "btn-two"/>
         
         </div>
     )

@@ -6,3 +6,16 @@
     color:#eeeeee;
     padding: 20px;
 }
+
+button{
+    padding :15px 30px;
+    margin-right:15px;
+    border-radius:10px;
+    border:none;
+}
+
+.btn-two{
+    background:none;
+    border: 3px solid white;
+    color:white;
+}
