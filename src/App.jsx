@@ -1,10 +1,13 @@
-import React from 'react';
+import Hero from './components/Hero-Section/Hero.jsx'
 import CreateTogether from './components/create together/CreateTogether';
 function App() {
-  return <div>
-    <CreateTogether/>
-    
-  </div>;
+  return (
+    <div>
+      <Hero />
+      <CreateTogether/>
+    </div>
+  )
+
 }
 
-export default App;
+export default App

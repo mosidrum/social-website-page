@@ -1,7 +1,9 @@
-import globals from 'globals';
-import reactPlugin from 'eslint-plugin-react';
-import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import importPlugin from 'eslint-plugin-import';
+import globals from 'globals'
+import reactPlugin from 'eslint-plugin-react'
+import reactHooksPlugin from 'eslint-plugin-react-hooks'
+import importPlugin from 'eslint-plugin-import'
+import prettier from 'eslint-config-prettier'
+import eslintPluginPrettier from 'eslint-plugin-prettier'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -35,7 +37,8 @@ export default [
     plugins: {
       react: reactPlugin,
       'react-hooks': reactHooksPlugin,
-      import: importPlugin
+      import: importPlugin,
+      prettier: eslintPluginPrettier
     },
     rules: {
       /* --- Basic rules --- */
@@ -46,6 +49,10 @@ export default [
       semi: ['error', 'always'],
       quotes: ['error', 'single', { avoidEscape: true }],
       'comma-dangle': ['error', 'never'],
+
+      // prettier
+      ...prettier.rules,
+      'prettier/prettier': 'error',
 
       /* --- React-specific --- */
       'react/jsx-uses-react': 'error',
@@ -77,4 +84,4 @@ export default [
       ]
     }
   }
-];
+]
