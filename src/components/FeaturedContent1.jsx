@@ -1,7 +1,7 @@
 import FeaturedContent from './FeaturedContent.jsx';
 import FeaturedContentHeading from './FeaturedContentHeading.jsx';
 import img from './FCimages/image.png';
-import imgone from 'FCimages/Image0.jpg';
+import imgone from 'FCimages/image0.jpg';
 import imgtwo from './FCimages/image2.jpg';
 function FC() {
   return (
