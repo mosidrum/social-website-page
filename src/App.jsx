@@ -1,12 +1,11 @@
-import React from 'react';
-import Contact from './components/Contact-me/contact.jsx';
+import Hero from './components/Hero-Section/Hero.jsx'
 function App() {
   return (
     <div>
-      Hello
-      <Contact />
+      <Hero />
+       <Contact />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
