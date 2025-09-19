@@ -6,7 +6,7 @@ function SocialCard({ value, text, icon }) {
       </h3>
       <p>{text}</p>
     </div>
-  );
+  )
 }
 
-export default SocialCard;
+export default SocialCard

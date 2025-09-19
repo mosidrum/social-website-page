@@ -1,15 +1,15 @@
-import './Hero.css';
-import protrait from './images/protrait.jpg';
-import Avatar from './Avatar.jsx';
-import ContentBox from './ContentBox.jsx';
-import SocialCard from './SocialCard.jsx';
+import './Hero.css'
+import protrait from './images/protrait.jpg'
+import Avatar from './Avatar.jsx'
+import ContentBox from './ContentBox.jsx'
+import SocialCard from './SocialCard.jsx'
 
 const socialsData = [
   { value: '2M+', text: 'Content Views' },
   { value: '50k+', text: 'Students Taught' },
   { value: '100+', text: 'Brands Collaborated' },
   { value: '4.7', text: 'Average Rating', icon: 'fa-solid fa-star' }
-];
+]
 
 function Hero() {
   return (
@@ -28,7 +28,7 @@ function Hero() {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Hero;
+export default Hero
