@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Hero />
-      <Card />
       <Contact />
+      <Card />
     </>
   )
 }
