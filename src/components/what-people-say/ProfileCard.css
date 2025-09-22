@@ -38,6 +38,7 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-top: 60px;
+  font-family: 'poppins', sans-serif;
 }
 
 .name {
@@ -56,4 +57,9 @@ p {
 .profile-Title {
   margin: 3px;
   color: rgb(75, 71, 71);
+}
+
+
+.profile-heading{
+  margin-top: 60px;
 }

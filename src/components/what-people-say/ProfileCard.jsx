@@ -11,7 +11,8 @@ const ProfileCard = (props) => {
   return (
     <div className="profile-container">
       <div className="profile-box">
-        <img src={props.image} alt="" />
+        {/* <img src={props.image} alt="" /> */}
+        <img src={props.image} alt={props.name} />
         <div className="profile-description">{props.description}</div>
         <div className="name">{props.name}</div>
         <div className="profile-Job">{props.job}</div>
