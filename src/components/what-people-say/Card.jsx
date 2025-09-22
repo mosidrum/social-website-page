@@ -8,7 +8,7 @@ const Card = () => {
       {heading}
       <div className="profile">
         <ProfileCard
-           image="/bro1.jpg"
+          image="/bro1.jpg"
           name="Vincent"
           description="Vincent's design tutorials transformed our team's approach to visual content. His clear explanations and practical tips are invaluable."
           job="Marketing Designer"
