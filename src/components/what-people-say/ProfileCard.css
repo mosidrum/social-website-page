@@ -15,10 +15,12 @@ body {
 }
 
 .profile-box img {
-  height: 125px;
-  border-radius: 350px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%; 
   object-fit: cover;
 }
+
 
 p {
   font-size: large;
