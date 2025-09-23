@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: antiquewhite;
+  background-color:white;
 }
 
 .profile-box {
@@ -21,7 +21,6 @@ body {
   object-fit: cover;
 }
 
-
 p {
   font-size: large;
   font-weight: normal;
@@ -30,7 +29,11 @@ p {
 
 .profile-description {
   margin-top: 20px;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding: 5px;
+  line-height: 1.5;
+  color: #4a4a4a;
 }
 
 .profile-container {
@@ -60,7 +63,6 @@ p {
   margin: 3px;
   color: rgb(75, 71, 71);
 }
-
 
 .profile-heading{
   margin-top: 60px;
