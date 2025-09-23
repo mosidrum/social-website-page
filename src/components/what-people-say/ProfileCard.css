@@ -36,6 +36,15 @@ p {
   color: #4a4a4a;
 }
 
+.profile-description::before {
+  content: '"';
+}
+
+.profile-description::after {
+  content: '"';
+}
+
+
 .profile-container {
   padding: 20px;
   display: flex;
