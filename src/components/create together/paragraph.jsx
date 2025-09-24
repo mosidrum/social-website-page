@@ -1,6 +1,6 @@
 function Paragraph() {
   return (
-    <p>
+    <p className="p-text">
       Ready to colaborate or have a project in mind? i'd love to hear from you
     </p>
   )
