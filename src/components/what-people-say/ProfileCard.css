@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color:white;
+  background-color: white;
 }
 
 .profile-box {
@@ -17,7 +17,7 @@ body {
 .profile-box img {
   height: 70px;
   width: 70px;
-  border-radius: 50%; 
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -43,7 +43,6 @@ p {
 .profile-description::after {
   content: '"';
 }
-
 
 .profile-container {
   padding: 20px;
@@ -73,6 +72,6 @@ p {
   color: rgb(75, 71, 71);
 }
 
-.profile-heading{
+.profile-heading {
   margin-top: 60px;
 }
